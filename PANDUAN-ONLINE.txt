@@ -1,0 +1,20 @@
+LAUTAN PASIR - PANDUAN ONLINE (GRATIS)
+
+A. Coba di komputer
+1. Klik start.bat (butuh Node.js 18+). Edit .env: ganti ADMIN_PASSWORD.
+2. Buka http://localhost:3000  | Admin: http://localhost:3000/admin/
+
+B. Online gratis (domain: lautanpasirtourandtravel.onrender.com)
+1. Database gratis: daftar neon.tech -> buat project -> salin "Connection string" (postgresql://...).
+2. Upload folder ini ke GitHub (repo baru). File .env TIDAK ikut (sudah di .gitignore).
+3. Daftar render.com -> New > Web Service -> pilih repo.
+   - Name: lautanpasirtourandtravel   (ini menjadi alamat web; kalau sudah dipakai orang, coba lautan-pasir-tour-travel)
+   - Build Command: npm install    | Start Command: npm start    | Instance: Free
+   - Environment: ADMIN_USER, ADMIN_PASSWORD (kuat & unik), DATABASE_URL (dari Neon)
+4. Deploy. Alamat jadi https://lautanpasirtourandtravel.onrender.com
+
+C. Setelah online, login /admin/ lalu:
+- tab Pembayaran: isi rekening bank, upload gambar QRIS, nomor WhatsApp
+- tab Paket / Armada: edit harga (harga 0 = "Hubungi Kami"), foto, itinerary
+
+Catatan: hosting gratis Render "tidur" setelah ±15 menit sepi (buka pertama ±30-50 detik).
